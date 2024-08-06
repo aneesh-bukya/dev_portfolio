@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aneesh Bukya - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- Include Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Desktop Navigation -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">Aneesh Bukya</a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- Hamburger Menu for Mobile -->
+          <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav" class="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              src="./assets/profile2.heic"
+              alt="Aneesh Bukya profile picture"
+            />
+          </div>
+          <div class="hero-text">
+            <h1>Hello, I'm Aneesh Bukya</h1>
+            <p class="subtitle">Full Stack Developer</p>
+            <div class="hero-buttons">
+              <a
+                href="./assets/Aneesh_Bukya_resume_new.pdf"
+                class="btn btn-primary"
+                download
+                >Download CV</a
+              >
+              <a href="#contact" class="btn btn-secondary">Contact Info</a>
+            </div>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/aneesh-bukya/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/aneeshbukya"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Get To Know More About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./assets/RIT2.png" alt="Profile picture" />
+          </div>
+          <div class="about-text">
+            <div class="about-cards">
+              <div class="card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Experience</h3>
+                <p>6+ months <br />Software Engineer</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>B.Sc. Computer Science <br />Rochester Institute of Technology</p>
+              </div>
+            </div>
+            <p>
+              I am a third-year computer science student at Rochester Institute
+              of Technology, passionate about exploring the realms of coding,
+              machine learning, and building robust full-stack applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+<!-- Education Section -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-content">
+      <div class="education-item">
+        <h3>B.S. Honors in Computer Science</h3>
+        <h4>Rochester Institute of Technology</h4>
+        <p class="duration">Expected Graduation: May 2026</p>
+        <p class="location">Rochester, NY</p>
+        <ul>
+          <li>Concentration: Artificial Intelligence</li>
+          <li>Minor: Business Administration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Explore My Experience</h2>
+        <div class="experience-details">
+          <div class="experience-item">
+            <h3 class="company">CodePath</h3>
+            <h4 class="role">Tech Fellow</h4>
+            <p class="duration">Jul 2024 – Present</p>
+            <p class="location">Remote</p>
+            <ul class="description">
+              <li>
+                Mentored over 25 students weekly, providing guidance on
+                fundamental data structures and algorithms concepts and
+                problem-solving techniques.
+              </li>
+              <li>
+                Collaborated with the course instructor to enhance the quality
+                and interactivity of course materials, ensuring an engaging
+                learning experience for participants.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3 class="company">Brightcone.ai</h3>
+            <h4 class="role">Machine Learning Engineer Intern</h4>
+            <p class="duration">May 2024 – Present</p>
+            <p class="location">Dallas, Texas</p>
+            <ul class="description">
+              <li>
+                Developed and implemented an AI-driven summarization feature for
+                candidate notes, reducing manual processing time by 70% and
+                handling over 20 candidate evaluations weekly.
+              </li>
+              <li>
+                Designed an FAQ agent leveraging AI, which successfully answered
+                85% of HR-related queries, cutting down response time from 24
+                hours to instant.
+              </li>
+              <li>
+                Created an onboarding form module that personalized and sent
+                emails to new employees, increasing onboarding efficiency by 60%
+                and processed 30+ onboarding requests within the first month.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3 class="company">Rugged Monitoring</h3>
+            <h4 class="role">E-Mobility Marketing Executive</h4>
+            <p class="duration">Jul 2020 – Sep 2020</p>
+            <p class="location">Remote</p>
+            <ul class="description">
+              <li>
+                Authored more than 20 blogs centered on E-Mobility and Fiber Optic Sensors, generating significant lead generation and heightened website traffic for the organization.
+              </li>
+              <li>
+                Offered a range of tools and recommendations to enhance the company's social media strategy, resulting in a 10% boost in brand recognition.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Browse My Recent Projects</h2>
+        <div class="project-details">
+          <div class="project-item">
+            <div class="project-image">
+              <img
+                src="./assets/breast-cancer-predictor.png"
+                alt="Breast Cancer Diagnosis Predictor"
+              />
+            </div>
+            <h3 class="project-title">Breast Cancer Diagnosis Predictor</h3>
+            <p class="project-description">
+              Developed an interactive Streamlit web app using Python and
+              Scikit-learn for breast cancer prediction, achieving over 98%
+              accuracy through data preprocessing and feature visualization with
+              Pandas and NumPy.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="https://github.com/" class="btn btn-primary" target="_blank">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-image">
+              <img
+                src="./assets/personal-ai-trainer.png"
+                alt="Personal AI Trainer"
+              />
+            </div>
+            <h3 class="project-title">RepIt - Personal AI Trainer</h3>
+            <p class="project-description">
+              Utilized OpenCV and machine learning to create a personal AI
+              trainer capable of detecting exercise repetitions and providing
+              real-time form feedback, improving user performance by 40% within
+              a month.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/aneeshbukya/RepIt"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="https://devpost.com/software/repit-your-personal-ai-trainer" class="btn btn-primary" target="_blank">DevPost</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-image">
+              <img
+                src="./assets/twitter-sentiment-analysis.png"
+                alt="Twitter Sentiment Analysis"
+              />
+            </div>
+            <h3 class="project-title">Twitter Sentiment Analysis</h3>
+            <p class="project-description">
+              Conducted sentiment analysis on Twitter data using Python's
+              TextBlob, identifying market trends with 80% accuracy and creating
+              a report that assisted in predicting stock performance for a
+              major client.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/"
+                class="btn btn-outline"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="https://github.com/" class="btn btn-primary" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <p>
+              I am open to new opportunities and collaborations. Feel free to
+              reach out if you have any questions or want to connect!
+            </p>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:aneeshbsri@outlook.com">aneeshbsri@outlook.com</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                Rochester, NY
+              </li>
+            </ul>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/aneesh-bukya/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/aneeshbukya"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <form action="#" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2024 Aneesh Bukya. All Rights Reserved.</p>
+    <ul class="footer-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- JavaScript for Menu Toggle -->
+<script>
+  function toggleMenu() {
+    const mobileNav = document.getElementById("mobile-nav");
+    mobileNav.classList.toggle("open");
+  }
+</script>
+
+<style>
+  /* Footer */
+  footer {
+    background-color: #333; /* Dark grey for modern feel */
+    padding: 2rem 0;
+    color: #f0f0f0; /* Light grey text for better contrast */
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footer-nav li {
+    margin: 0;
+  }
+
+  .footer-nav a {
+    color: #f0f0f0; /* Light grey text color */
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s ease;
+  }
+
+  .footer-nav a:hover {
+    color: #ffa500; /* Orange color for hover effect */
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #f0f0f0; /* Light grey text for better readability */
+  }
+</style>
+  </body>
+</html>
