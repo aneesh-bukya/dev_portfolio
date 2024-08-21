@@ -361,6 +361,15 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+.badge {
+  background-color: #ffcc00; /* Yellow background for visibility */
+  color: #333; /* Dark text color for contrast */
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-left: 10px;
+}
 
 .project-item {
   background-color: var(--dark-grey);
