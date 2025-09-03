@@ -191,42 +191,42 @@ const projects = [
     blurb: "Designed an interactive Streamlit web app in Python for breast cancer prediction, achieving over 98% accuracy using Scikit-learn for data preprocessing with NumPy and Pandas, and deployed with scaler objects for reliability.",
     tags: ["Python", "Scikit-learn", "NumPy", "Pandas", "Streamlit"],
     category: "ai",
-    links: { repo: "https://github.com/aneeshbukya", demo: "" }
+    links: { repo: "https://github.com/aneeshbukya/Breast-Cancer-Diagnosis-Predictor"}
   },
   {
     title: "RepIt — Personal AI Trainer",
     blurb: "Spearheaded the development of an AI-powered fitness trainer using computer vision technology, providing real-time workout form feedback and achieving a 90% accuracy rate in tracking and counting repetitions.",
     tags: ["Angular", "TypeScript", "HTML/CSS", "ML5.js"],
     category: "ai",
-    links: { repo: "https://github.com/aneeshbukya", demo: "" }
+    links: { repo: "https://github.com/aneeshbukya/RepIt" }
   },
   {
-    title: "AI‑Powered HR Solutions",
+    title: "EmpowerHR:AI‑Powered HR Solutions",
     blurb: "Django web app with agentic AI to summarize candidate notes, answer FAQs, and onboard employees.",
     tags: ["Django", "LLMs", "OpenAI", "PostgreSQL"],
     category: "ai",
-    links: { repo: "https://github.com/aneeshbukya", demo: "" }
+    links: { repo: "https://github.com/aneeshbukya/EmpowerHR--AI-Powered-HR-Agents" }
   },
   {
     title: "Twitter Sentiment → Markets",
     blurb: "Analyzed sentiment impact on stock trends; built ETL + dashboards for insights.",
     tags: ["Python", "NLP", "Dashboards"],
     category: "ai",
-    links: { repo: "https://github.com/aneeshbukya", demo: "" }
+    links: { repo: "https://github.com/aneeshbukya/Twitter-Sentiment-Investing-Strategy" }
   },
   {
     title: "Language Classifier (EN vs NL)",
     blurb: "DTL + AdaBoost on sentence fragments; feature engineering + cross‑val.",
     tags: ["ML", "AdaBoost", "DTL"],
     category: "ai",
-    links: { repo: "https://github.com/aneeshbukya", demo: "" }
+    links: { repo: "https://github.com/aneeshbukya/Multilingual-Language-Classifier" }
   },
   {
-    title: "Config Tool UI (NiceGUI)",
-    blurb: "Migrated legacy CLI to a modern web app for MSA Safety; faster workflows & better UX.",
-    tags: ["Python", "NiceGUI", "UX"],
+    title: "Pantry Tracker",
+    blurb: "A pantry tracker web app built with Next.js and Firebase, using React for the frontend and Firebase for the backend.",
+    tags: ["Next.js", "Firebase", "React"],
     category: "web",
-    links: { repo: "https://github.com/aneeshbukya", demo: "" }
+    links: { repo: "https://github.com/aneeshbukya/Pantry-Tracker" }
   }
 ];
 
@@ -245,7 +245,6 @@ function renderProjects(filter = 'all'){
       </div>
       <div class="project-links">
         ${p.links.repo ? `<a href="${p.links.repo}" target="_blank" rel="noreferrer" class="project-link">GitHub →</a>` : ""}
-        ${p.links.demo ? `<a href="${p.links.demo}" target="_blank" rel="noreferrer" class="project-link">Demo →</a>` : ""}
       </div>
     </article>
   `).join("");
