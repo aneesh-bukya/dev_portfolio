@@ -3,251 +3,777 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aneesh Bukya — Portfolio</title>
-  <meta name="description" content="Aneesh Bukya — CS @ RIT (Honors). AI/ML & Software Engineer. Portfolio, projects, experience, and contact." />
+  <title>Aneesh Bukya — AI/ML Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Aneesh Bukya — CS @ RIT (Honors). AI/ML Engineer, Full-Stack Developer. Building the future with intelligent systems and clean code." />
+  <meta name="keywords" content="Aneesh Bukya, AI Engineer, Machine Learning, Full Stack Developer, RIT, Computer Science, Portfolio" />
+  <meta name="author" content="Aneesh Bukya" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aneeshbukya.netlify.app/" />
+  <meta property="og:title" content="Aneesh Bukya — AI/ML Engineer & Full-Stack Developer" />
+  <meta property="og:description" content="CS @ RIT (Honors). Building intelligent systems and clean web applications." />
+  <meta property="og:image" content="https://aneeshbukya.netlify.app/assets/profile.jpeg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://aneeshbukya.netlify.app/" />
+  <meta property="twitter:title" content="Aneesh Bukya — AI/ML Engineer & Full-Stack Developer" />
+  <meta property="twitter:description" content="CS @ RIT (Honors). Building intelligent systems and clean web applications." />
+  <meta property="twitter:image" content="https://aneeshbukya.netlify.app/assets/profile.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/mediaqueries.css" />
+  
+  <!-- Scripts -->
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- ====== Loading Screen ====== -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <span class="logo-text">Aneesh Bukya<span class="accent">.</span></span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+      <p class="loading-text">Loading amazing experiences...</p>
+    </div>
+  </div>
+
   <!-- ====== Navigation ====== -->
-  <header class="site-header">
+  <header class="site-header" id="header">
     <nav class="nav container">
-      <a href="#" class="brand">Aneesh<span class="accent">.</span></a>
-      <button class="nav-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
+      <a href="#" class="brand">
+        <span class="brand-text">Aneesh Bukya<span class="accent">.</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" id="nav-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ====== Hero ====== -->
-  <section class="hero">
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+    </div>
+    
     <div class="container hero-grid">
       <div class="hero-text">
-        <div class="pill">Open to 2026 SWE Internships</div>
-        <h1>Hi, I'm <span class="gradient">Aneesh Bukya</span></h1>
-        <h2 class="typewriter" data-words='["CS @ RIT (Honors)","AI/ML Engineer","Full‑Stack Developer","Builder & Mentor"]'>
-          <span class="tw-text"></span><span class="tw-caret">|</span>
-        </h2>
+        <div class="pill">
+          <span class="pill-icon">🚀</span>
+          <span>Software Engineering Intern @ Vanguard</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Aneesh Bukya</span>
+        </h1>
+        
+        <div class="typewriter-container">
+          <h2 class="typewriter" data-words='["CS @ RIT (Honors)","AI/ML Engineer","Full‑Stack Developer","Builder & Mentor"]'>
+            <span class="tw-text"></span><span class="tw-caret">|</span>
+          </h2>
+        </div>
+        
         <p class="lead">
           I build practical AI systems and polished web apps. Recent work spans AWS‑powered agents,
-          computer vision fitness coaching, and end‑to‑end ML prototypes. I love turning ideas into crisp, shippable products.
+          financial data processing, and end‑to‑end ML prototypes. I love turning ideas into crisp, shippable products.
         </p>
+        
         <div class="hero-cta">
-          <a class="btn primary" href="https://www.linkedin.com/in/aneesh-bukya" target="_blank" rel="noreferrer">Resume / LinkedIn</a>
-          <a class="btn ghost" href="#projects">View Projects</a>
+          <a class="btn btn-primary" href="assets/Aneesh_Bukya_resume.pdf" target="_blank" rel="noreferrer">
+            <span class="btn-icon">📄</span>
+            <span>Download Resume</span>
+          </a>
+          <a class="btn btn-secondary" href="#projects">
+            <span class="btn-icon">💼</span>
+            <span>View Projects</span>
+          </a>
         </div>
 
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num">3+</div>
-            <div class="stat-label">Industry Internships</div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🏢</div>
+            <div class="stat-content">
+              <div class="stat-num" data-target="400">0</div>
+              <div class="stat-label">Community Members Led</div>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-num">10+</div>
-            <div class="stat-label">Projects Built</div>
+          <div class="stat-card">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-content">
+              <div class="stat-num" data-target="10">0</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-num">3.8</div>
-            <div class="stat-label">GPA (Honors)</div>
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-content">
+              <div class="stat-num" data-target="4">0</div>
+              <div class="stat-label">Industry Internships</div>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-num">25+</div>
-            <div class="stat-label">Students Mentored</div>
+          <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-content">
+              <div class="stat-num" data-target="25">0</div>
+              <div class="stat-label">Students Mentored</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="card">
-          <h3>Now</h3>
-          <ul class="now-list">
-            <li>🏃 90‑day shred: daily training + cardio</li>
-            <li>🧠 Building agentic AI projects</li>
-            <li>📚 Prepping for Fall ’25 co‑op @ Vanguard</li>
-          </ul>
-          <div class="links">
-            <a class="chip" href="mailto:aneeshbsri@outlook.com">Email</a>
-            <a class="chip" href="https://github.com/aneeshbukya" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="chip" href="https://www.linkedin.com/in/aneesh-bukya" target="_blank" rel="noreferrer">LinkedIn</a>
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-image-container">
+            <img src="assets/profile.jpeg" alt="Aneesh Bukya" class="profile-image" />
+            <div class="profile-status">
+              <div class="status-dot"></div>
+              <span>Available for full-time opportunities</span>
+            </div>
+          </div>
+          
+          <div class="current-focus">
+            <h3>Currently Focused On</h3>
+              <div class="focus-item">
+                <span class="focus-icon">🧠</span>
+                <span>Building agentic AI projects</span>
+              </div>
+              <div class="focus-item">
+                <span class="focus-icon">📚</span>
+                <span>Current SWE Intern @ Vanguard</span>
+              </div>
+              
+              <div class="social-links">
+                <a href="mailto:aneeshbsri@outlook.com" class="social-link" aria-label="Email">
+                  <span class="social-icon">📧</span>
+                </a>
+                <a href="https://github.com/aneeshbukya" target="_blank" rel="noreferrer" class="social-link" aria-label="GitHub">
+                  <span class="social-icon">💻</span>
+                </a>
+                <a href="https://www.linkedin.com/in/aneesh-bukya" target="_blank" rel="noreferrer" class="social-link" aria-label="LinkedIn">
+                  <span class="social-icon">💼</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to explore</span>
     </div>
   </section>
 
   <!-- ====== Projects ====== -->
-  <section id="projects" class="section">
+  <section id="projects" class="section projects-section">
     <div class="container">
       <div class="section-head">
-        <h2>Featured Projects</h2>
-        <p>Selected builds that showcase AI, backend, and clean frontend craft.</p>
+        <div class="section-badge">
+          <span class="badge-icon">💼</span>
+          <span>Portfolio</span>
+        </div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          Selected builds that showcase AI, backend, and clean frontend craft. 
+          Each project represents a unique challenge solved with modern technologies.
+        </p>
       </div>
-      <div id="projects-grid" class="grid cards"></div>
+      
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      
+      <div id="projects-grid" class="projects-grid"></div>
+      
+      <div class="projects-cta">
+        <a href="https://github.com/aneeshbukya" target="_blank" rel="noreferrer" class="btn btn-outline">
+          <span class="btn-icon">💻</span>
+          <span>View All on GitHub</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ====== Experience ====== -->
-  <section id="experience" class="section alt">
+  <section id="experience" class="section experience-section">
     <div class="container">
       <div class="section-head">
-        <h2>Experience</h2>
-        <p>Hands‑on internships and leadership with a builder’s mindset.</p>
+        <div class="section-badge">
+          <span class="badge-icon">💼</span>
+          <span>Experience</span>
+        </div>
+        <h2 class="section-title">Professional Journey</h2>
+        <p class="section-description">
+          Hands‑on internships and leadership roles with a builder's mindset. 
+          Each experience has shaped my approach to solving complex problems.
+        </p>
       </div>
 
-      <ol class="timeline">
-        <li class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Application Engineer (Co‑op), <span class="emph">Vanguard</span></h3>
-            <div class="meta">Fall 2025 • Malvern, PA (Digital First)</div>
-            <ul>
-              <li>Working across Angular frontends and AWS‑hosted Java/Python microservices with CI/CD on GitHub.</li>
-              <li>Agile team focused on rapid, high‑quality delivery and automated testing.</li>
-            </ul>
+      <div class="timeline-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineering Intern</h3>
+                <span class="company">Vanguard</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="duration">Sep 2025 – Present</span>
+                <span class="location">Malvern, PA</span>
+              </div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Working across Angular frontends and AWS‑hosted Java/Python microservices with CI/CD on GitHub.</li>
+                  <li>Agile team focused on rapid, high‑quality delivery and automated testing.</li>
+                </ul>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Java</span>
+                <span class="tag">Python</span>
+                <span class="tag">CI/CD</span>
+              </div>
+            </div>
           </div>
-        </li>
 
-        <li class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Firmware/Tools SWE (Co‑op), <span class="emph">MSA Safety</span></h3>
-            <div class="meta">Spring 2025 • Cranberry Twp., PA</div>
-            <ul>
-              <li>Transformed Config Tool from a CLI to a modern NiceGUI web app; improved UX and speed.</li>
-              <li>Shipped PRs on X30‑X50 transmitter firmware (EEPROM reads, serial fixes, UI polish).</li>
-              <li>Presented co‑op outcomes company‑wide; collaborated closely with mentor Beau.</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineering Intern</h3>
+                <span class="company">Liberty Mutual</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="duration">May 2025 – Aug 2025</span>
+                <span class="location">Portsmouth, NH</span>
+              </div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Developed an AWS Glue job using Python to process and store over 2 million billing records into PostgreSQL and MySQL financial databases, improving data availability for downstream reporting by 30%.</li>
+                  <li>Upgraded internal APIs to support 3+ downstream financial applications, enabling the seamless flow of billing metadata and reducing data discrepancies by 25% across the pipeline.</li>
+                  <li>Improved traceability in large-scale financial data pipelines by implementing a message ID tracking system, reducing debugging and root cause analysis time by 40% across multiple AWS-integrated services.</li>
+                </ul>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag">AWS Glue</span>
+                <span class="tag">Python</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">APIs</span>
+              </div>
+            </div>
           </div>
-        </li>
 
-        <li class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>ML Engineer Intern, <span class="emph">Brightcone.ai</span></h3>
-            <div class="meta">Summer 2024 • Remote</div>
-            <ul>
-              <li>Built 10+ AWS Lambda functions and integrated 6 Bedrock action groups to automate IT workflows.</li>
-              <li>Led backend for a help‑desk AI agent; S3 knowledge base turned 24h responses into instant answers.</li>
-              <li>Prototyped a React front‑end with Rekognition‑based facial auth; boosted automation speed by 85%.</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineering Intern</h3>
+                <span class="company">MSA Safety Inc.</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="duration">Jan 2025 – May 2025</span>
+                <span class="location">Pittsburgh, PA</span>
+              </div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Enhanced a Flask-based test execution platform with SQLAlchemy, enabling users to create custom test suites, organize tests by module and class, reducing test selection time by 60% and streamlining software validation workflows.</li>
+                  <li>Integrated Bitbucket SSO authentication using Python and FastAPI for a distributed test infrastructure, improving user authentication speed by 40% and ensuring secure system access for 10+ test devices.</li>
+                  <li>Transformed a command-line tool into a web-based application using NiceGUI, reducing setup time by 40% and improving efficiency for 50+ users by enabling a more intuitive and accessible interface.</li>
+                </ul>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag">Flask</span>
+                <span class="tag">SQLAlchemy</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">NiceGUI</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
           </div>
-        </li>
 
-        <li class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Teaching Assistant, <span class="emph">CodePath</span></h3>
-            <div class="meta">Jul 2024 – Present • Remote</div>
-            <ul>
-              <li>Mentor 25+ students weekly on DSA and problem solving; refine materials and solutions.</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineering Intern</h3>
+                <span class="company">Brightcone.ai</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="duration">May 2024 – Dec 2024</span>
+                <span class="location">Dallas, TX</span>
+              </div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Collaborated with a team of 5 in an agile environment to develop over 10 AWS Lambda functions, automating IT tasks and enhancing internal support for BART employees by integrating 6 AWS Bedrock action groups using Python.</li>
+                  <li>Managed the back-end development of the help desk AI agent, leveraging AWS S3 to store data and utilizing a fine-tuned LLM on BART data, reducing response time from 24 hours to instant for internal inquiries.</li>
+                  <li>Deployed a React frontend with facial authentication using AWS Rekognition, integrating AWS Lambda functions with Bedrock, which boosted IT task automation speed by 85%.</li>
+                </ul>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag">AWS Lambda</span>
+                <span class="tag">Bedrock</span>
+                <span class="tag">React</span>
+                <span class="tag">Rekognition</span>
+                <span class="tag">S3</span>
+              </div>
+            </div>
           </div>
-        </li>
 
-        <li class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Marketing Executive, <span class="emph">Rugged Monitoring</span></h3>
-            <div class="meta">2022 – 2023</div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Teaching Assistant</h3>
+                <span class="company">CodePath</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="duration">Jul 2024 – Present</span>
+                <span class="location">Remote</span>
+              </div>
+              <div class="timeline-description">
+                <ul>
+                  <li>Mentor 25+ students weekly on DSA and problem solving; refine materials and solutions.</li>
+                </ul>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag">Mentoring</span>
+                <span class="tag">DSA</span>
+                <span class="tag">Teaching</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Leadership ====== -->
+  <section id="leadership" class="section leadership-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-badge">
+          <span class="badge-icon">👥</span>
+          <span>Leadership</span>
+        </div>
+        <h2 class="section-title">Community Impact</h2>
+        <p class="section-description">
+          Leading and inspiring others through technology education and community building. 
+          Passionate about creating inclusive spaces for learning and growth.
+        </p>
+      </div>
+
+      <div class="leadership-container">
+        <div class="leadership-card">
+          <div class="leadership-header">
+            <div class="leadership-icon">🚀</div>
+            <div class="leadership-info">
+              <h3>Community Manager</h3>
+              <h4>Google Developer Student Club</h4>
+              <div class="leadership-meta">
+                <span class="duration">Aug 2023 – Present</span>
+                <span class="location">Rochester Institute of Technology</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="leadership-description">
             <ul>
-              <li>Drove content and social strategy; collaborated across teams to ship high‑quality collateral.</li>
+              <li>Led a dynamic community of over 400 tech enthusiasts by fostering a collaborative and inclusive environment that actively participated and engaged in tech-focused events, including workshops, hackathons, and speaker sessions.</li>
+              <li>Coordinated and promoted events, increasing participation by 40% through targeted outreach and communication.</li>
             </ul>
           </div>
-        </li>
-      </ol>
+          
+          <div class="leadership-tags">
+            <span class="tag">Community Management</span>
+            <span class="tag">Event Coordination</span>
+            <span class="tag">Tech Education</span>
+            <span class="tag">Leadership</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ====== Skills ====== -->
-  <section id="skills" class="section">
+  <section id="skills" class="section skills-section">
     <div class="container">
       <div class="section-head">
-        <h2>Skills</h2>
-        <p>Comfortable across the stack—love bridging AI with robust product engineering.</p>
+        <div class="section-badge">
+          <span class="badge-icon">🛠️</span>
+          <span>Skills</span>
+        </div>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-description">
+          Comfortable across the stack—love bridging AI with robust product engineering. 
+          Always learning and adapting to new technologies.
+        </p>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h4>Languages</h4>
-          <p>Python, Java, TypeScript/JavaScript, SQL, C</p>
+      <div class="skills-container">
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">💻</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript/JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C#</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <h4>Frameworks</h4>
-          <p>React, Angular, Django, Spring Boot</p>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">⚡</span>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
         </div>
-        <div class="skill-card">
-          <h4>Cloud & DevOps</h4>
-          <p>AWS (Lambda, Bedrock, S3, Rekognition), Docker, GitHub Actions</p>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">☁️</span>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag">AWS Lambda</span>
+            <span class="skill-tag">AWS Bedrock</span>
+            <span class="skill-tag">AWS S3</span>
+            <span class="skill-tag">AWS Rekognition</span>
+            <span class="skill-tag">AWS Glue</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
         </div>
-        <div class="skill-card">
-          <h4>AI/ML</h4>
-          <p>OpenCV, NumPy, scikit‑learn, prompt/agent design</p>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🤖</span>
+            <h3>AI/ML & Data</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">OpenAI</span>
+            <span class="skill-tag">HuggingFace</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Agent Design</span>
+            <span class="skill-tag">Computer Vision</span>
+          </div>
         </div>
-        <div class="skill-card">
-          <h4>Other</h4>
-          <p>REST APIs, CI/CD, Agile/Scrum, Mentorship</p>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🎯</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag">Agile/Scrum</span>
+            <span class="skill-tag">Mentorship</span>
+            <span class="skill-tag">Team Leadership</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Project Management</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ====== Education ====== -->
-  <section id="education" class="section alt">
+  <section id="education" class="section education-section">
     <div class="container">
       <div class="section-head">
-        <h2>Education</h2>
-      </div>
-      <div class="edu">
-        <div class="edu-left">
-          <h3>Rochester Institute of Technology — <span class="emph">B.S. Computer Science (Honors)</span></h3>
-          <div class="meta">Expected May 2026 • GPA: 3.8/4.0 • Concentration: AI • Minors: Business, Math</div>
+        <div class="section-badge">
+          <span class="badge-icon">🎓</span>
+          <span>Education</span>
         </div>
-        <div class="edu-right">
-          <ul>
-            <li>Dean’s List; leadership in GDSC & Society of Software Engineers.</li>
-            <li>Relevant Coursework: ML, AI, Stats/Prob, OOP, DSA, DBMS, Linear Algebra.</li>
-          </ul>
+        <h2 class="section-title">Academic Journey</h2>
+        <p class="section-description">
+          Pursuing excellence in computer science with a focus on AI and practical applications.
+        </p>
+      </div>
+      
+      <div class="education-card">
+        <div class="education-header">
+          <div class="university-logo">
+            <img src="assets/RIT.png" alt="RIT Logo" class="logo-image" />
+          </div>
+          <div class="education-info">
+            <h3>Rochester Institute of Technology</h3>
+            <h4>B.S. Computer Science (Honors)</h4>
+            <div class="education-meta">
+              <span class="graduation">Expected Dec 2026</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="education-details">
+          <div class="concentration">
+            <h5>Concentration</h5>
+            <span class="concentration-tag">Artificial Intelligence</span>
+          </div>
+          
+          <div class="minors">
+            <h5>Minors</h5>
+            <div class="minor-tags">
+              <span class="minor-tag">Business Administration</span>
+              <span class="minor-tag">Mathematics</span>
+            </div>
+          </div>
+          
+          <div class="achievements">
+            <h5>Achievements</h5>
+            <ul>
+              <li>Dean's List recognition</li>
+              <li>RIT Presidential Scholarship</li>
+              <li>RIT Recognition Scholarship</li>
+              <li>Leadership in Google Developer Student Club</li>
+              <li>Active member of Society of Software Engineers</li>
+            </ul>
+          </div>
+          
+          <div class="coursework">
+            <h5>Relevant Coursework</h5>
+            <div class="course-tags">
+              <span class="course-tag">Machine Learning</span>
+              <span class="course-tag">Artificial Intelligence</span>
+              <span class="course-tag">Probability and Statistics</span>
+              <span class="course-tag">Object-Oriented Programming</span>
+              <span class="course-tag">Data Structures and Algorithms</span>
+              <span class="course-tag">Mechanics of Programming</span>
+              <span class="course-tag">Database Management</span>
+              <span class="course-tag">Linear Algebra</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ====== Contact ====== -->
-  <section id="contact" class="section">
+  <section id="contact" class="section contact-section">
     <div class="container">
       <div class="section-head">
-        <h2>Contact</h2>
-        <p>Want to collaborate or chat? Reach out.</p>
+        <div class="section-badge">
+          <span class="badge-icon">💬</span>
+          <span>Contact</span>
+        </div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-description">
+          Ready to collaborate on something amazing? I'm always excited to discuss new opportunities, 
+          innovative projects, or just have a great conversation about technology.
+        </p>
       </div>
-      <div class="contact">
-        <a class="btn primary" href="mailto:aneeshbsri@outlook.com">Email me</a>
-        <a class="btn ghost" href="https://github.com/aneeshbukya" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/aneesh-bukya" target="_blank" rel="noreferrer">LinkedIn</a>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h4>Email</h4>
+            <p>aneeshbsri@outlook.com</p>
+            <a href="mailto:aneeshbsri@outlook.com" class="contact-link">Send Email</a>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h4>LinkedIn</h4>
+            <p>Professional Network</p>
+            <a href="https://www.linkedin.com/in/aneesh-bukya" target="_blank" rel="noreferrer" class="contact-link">Connect</a>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">💻</div>
+            <h4>GitHub</h4>
+            <p>Code & Projects</p>
+            <a href="https://github.com/aneeshbukya" target="_blank" rel="noreferrer" class="contact-link">View Profile</a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contact-form" class="form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-icon">📤</span>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ====== Footer ====== -->
   <footer class="site-footer">
-    <div class="container foot-grid">
-      <p>© <span id="year"></span> Aneesh Bukya</p>
-      <div class="foot-links">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Aneesh<span class="accent">.</span></h3>
+          <p>Building the future with intelligent systems and clean code.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:aneeshbsri@outlook.com">Email</a></li>
+              <li><a href="https://github.com/aneeshbukya" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/aneesh-bukya" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="assets/Aneesh_Bukya_resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Aneesh Bukya. All rights reserved.</p>
+        <p class="footer-note">Built with ❤️ and modern web technologies</p>
       </div>
     </div>
   </footer>
+
+  <!-- ====== Back to Top Button ====== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <span class="arrow-up">↑</span>
+  </button>
 </body>
 </html>
