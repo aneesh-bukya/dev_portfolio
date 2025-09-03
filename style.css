@@ -486,9 +486,8 @@ body {
 
 .hero-cta {
   display: flex;
-  gap: var(--space-lg);
+  justify-content: center;
   margin-bottom: var(--space-2xl);
-  flex-wrap: wrap;
   animation: slideInUp 0.8s ease 0.8s both;
 }
 
@@ -1724,8 +1723,7 @@ body {
   }
   
   .hero-cta {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
   
   .btn {
